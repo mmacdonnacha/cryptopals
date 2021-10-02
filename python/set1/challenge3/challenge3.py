@@ -45,7 +45,6 @@ def get_highest_score(values: list) -> tuple:
 
 if __name__ == '__main__':
     hex_string = '1b37373331363f78151b7f2b783431333d78397828372d363c78373e783a393b3736'
-    hex_bytes = hex_to_bytes(hex_string)
     list_of_xored_hex_values = [xor(hex_string, i) for i in range(0, 255)]
 
     max_score, max_string = get_highest_score(list_of_xored_hex_values)
