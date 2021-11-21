@@ -62,7 +62,7 @@ def get_best_score_for_each_line(lines: list) -> tuple:
 
         best_s, best_t = check_score(best_score, best_text, best_s, best_t)
 
-    return (best_s, best_t)
+    return (best_s, best_t)  # , lines.index(best_t))
 
 
 def check_score(new_score: int, new_text: str, current_score: int, current_text: str) -> tuple:
